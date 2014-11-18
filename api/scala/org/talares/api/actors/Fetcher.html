@@ -1,0 +1,1187 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>Fetcher - org.talares.api.actors.Fetcher</title>
+          <meta name="description" content="Fetcher - org.talares.api.actors.Fetcher" />
+          <meta name="keywords" content="Fetcher org.talares.api.actors.Fetcher" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'org.talares.api.actors.Fetcher';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="type">
+      <div id="definition">
+        <img src="../../../../lib/class_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.talares">talares</a>.<a href="../package.html" class="extype" name="org.talares.api">api</a>.<a href="package.html" class="extype" name="org.talares.api.actors">actors</a></p>
+        <h1>Fetcher</h1> <span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Fetcher</span><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Holds all functionality to compose an URL that designates where Json representations of 'T' might be found.</p><p>Passes these locations to instances of <a href="Executor.html" class="extype" name="org.talares.api.actors.Executor">Executor</a> to receive the Json representations.
+Is able to parse the Json into an instance of 'T' and send this to it's parent.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a>, <span class="extype" name="akka.actor.ActorLogging">ActorLogging</span>, <span class="extype" name="akka.actor.Actor">Actor</span>, <span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.talares.api.actors.Fetcher"><span>Fetcher</span></li><li class="in" name="org.talares.api.actors.BaseActor"><span>BaseActor</span></li><li class="in" name="akka.actor.ActorLogging"><span>ActorLogging</span></li><li class="in" name="akka.actor.Actor"><span>Actor</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        <div id="constructors" class="members">
+              <h3>Instance Constructors</h3>
+              <ol><li name="org.talares.api.actors.Fetcher#&lt;init&gt;" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="&lt;init&gt;(app:org.talares.api.Talares)(implicitjsonReadable:org.talares.api.datatypes.JsonReadable[T],implicitclassTag:scala.reflect.ClassTag[T]):org.talares.api.actors.Fetcher[T]"></a>
+      <a id="&lt;init&gt;:Fetcher[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">new</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Fetcher</span><span class="params">(<span name="app">app: <a href="../Talares.html" class="extype" name="org.talares.api.Talares">Talares</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="jsonReadable">jsonReadable: <a href="../datatypes/JsonReadable.html" class="extype" name="org.talares.api.datatypes.JsonReadable">JsonReadable</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>, <span name="classTag">classTag: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@&lt;init&gt;(app:org.talares.api.Talares)(implicitjsonReadable:org.talares.api.datatypes.JsonReadable[T],implicitclassTag:scala.reflect.ClassTag[T]):org.talares.api.actors.Fetcher[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.talares.api.actors.Fetcher.ID" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="ID=(String,Any)"></a>
+      <a id="ID:ID"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ID</span><span class="result"> = (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@ID=(String,Any)" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="akka.actor.Actor.Receive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Receive=akka.actor.Actor.Receive"></a>
+      <a id="Receive:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Receive</span><span class="result"> = <span class="extype" name="scala.PartialFunction">PartialFunction</span>[<span class="extype" name="scala.Any">Any</span>, <span class="extype" name="scala.Unit">Unit</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@Receive=akka.actor.Actor.Receive" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher.SearchParam" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="SearchParam=(String,Any)"></a>
+      <a id="SearchParam:SearchParam"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">type</span>
+      </span>
+      <span class="symbol">
+        <span class="name">SearchParam</span><span class="result"> = (<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Any">Any</span>)</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@SearchParam=(String,Any)" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="scala.AnyRef#!=" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="!=(x$1:Any):Boolean"></a>
+      <a id="!=(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $bang$eq" class="name">!=</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@!=(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef###" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="##():Int"></a>
+      <a id="##():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $hash$hash" class="name">##</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@##():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.AnyRef#==" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="==(x$1:Any):Boolean"></a>
+      <a id="==(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span title="gt4s: $eq$eq" class="name">==</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@==(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.talares.api.actors.BaseActor#Settings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Settings:org.talares.api.Settings"></a>
+      <a id="Settings:Settings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">Settings</span><span class="result">: <a href="../Settings.html" class="extype" name="org.talares.api.Settings">Settings</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@Settings:org.talares.api.Settings" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#app" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="app:org.talares.api.Talares"></a>
+      <a id="app:Talares"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">app</span><span class="result">: <a href="../Talares.html" class="extype" name="org.talares.api.Talares">Talares</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@app:org.talares.api.Talares" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.talares.api.actors.Fetcher">Fetcher</a> → <a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPostRestart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPostRestart(reason:Throwable):Unit"></a>
+      <a id="aroundPostRestart(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPostRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@aroundPostRestart(reason:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPostStop" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPostStop():Unit"></a>
+      <a id="aroundPostStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPostStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@aroundPostStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPreRestart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPreRestart(reason:Throwable,message:Option[Any]):Unit"></a>
+      <a id="aroundPreRestart(Throwable,Option[Any]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPreRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@aroundPreRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundPreStart" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundPreStart():Unit"></a>
+      <a id="aroundPreStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundPreStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@aroundPreStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#aroundReceive" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit"></a>
+      <a id="aroundReceive(akka.actor.Actor.Receive,Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">aroundReceive</span><span class="params">(<span name="receive">receive: <span class="extype" name="akka.actor.Actor.Receive">akka.actor.Actor.Receive</span></span>, <span name="msg">msg: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@aroundReceive(receive:akka.actor.Actor.Receive,msg:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../akka/package.html" class="extype" name="akka">akka</a>] </dd><dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="scala.Any#asInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="asInstanceOf[T0]:T0"></a>
+      <a id="asInstanceOf[T0]:T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">asInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Any.asInstanceOf.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@asInstanceOf[T0]:T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="scala.AnyRef#clone" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="clone():Object"></a>
+      <a id="clone():AnyRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">clone</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@clone():Object" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.CloneNotSupportedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#context" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="context:akka.actor.ActorContext"></a>
+      <a id="context:ActorContext"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">context</span><span class="result">: <span class="extype" name="akka.actor.ActorContext">ActorContext</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@context:akka.actor.ActorContext" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createIDQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createIDQuery(IDs:Seq[Fetcher.this.ID]):org.talares.api.queries.Query"></a>
+      <a id="createIDQuery(Seq[ID]):Query"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createIDQuery</span><span class="params">(<span name="IDs">IDs: <span class="extype" name="scala.Seq">Seq</span>[<a href="#ID=(String,Any)" class="extmbr" name="org.talares.api.actors.Fetcher.ID">ID</a>]</span>)</span><span class="result">: <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">Query</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createIDQuery(IDs:Seq[Fetcher.this.ID]):org.talares.api.queries.Query" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a> consisting of the endpoint for type 'T' and the ID's given.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a> consisting of the endpoint for type 'T' and the ID's given.
+</p></div><dl class="paramcmts block"><dt class="param">IDs</dt><dd class="cmt"><p>the ID's to include in the query</p></dd><dt>returns</dt><dd class="cmt"><p>an instance of <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a>
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createIDTask" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createIDTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],webserviceLocation:String,IDs:Fetcher.this.ID*):org.talares.api.actors.messages.ExecutorMessages.Execute[T]"></a>
+      <a id="createIDTask(Task[T],String,ID*):Execute[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createIDTask</span><span class="params">(<span name="task">task: <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">Task</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>, <span name="webserviceLocation">webserviceLocation: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="IDs">IDs: <a href="#ID=(String,Any)" class="extmbr" name="org.talares.api.actors.Fetcher.ID">ID</a>*</span>)</span><span class="result">: <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">Execute</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createIDTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],webserviceLocation:String,IDs:Fetcher.this.ID*):org.talares.api.actors.messages.ExecutorMessages.Execute[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a> with a complete URL in String form by using
+the createUrl() method to compose said URL from a webservice location and Query composed of the given ID's.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a> with a complete URL in String form by using
+the createUrl() method to compose said URL from a webservice location and Query composed of the given ID's.
+</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>the active task</p></dd><dt class="param">webserviceLocation</dt><dd class="cmt"><p>the URL on which the webservice can be reached</p></dd><dt class="param">IDs</dt><dd class="cmt"><p>the ID's to include in the query</p></dd><dt>returns</dt><dd class="cmt"><p>an <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a>
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createQueryTask" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createQueryTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],webserviceLocation:String,query:org.talares.api.queries.Query):org.talares.api.actors.messages.ExecutorMessages.Execute[T]"></a>
+      <a id="createQueryTask(Task[T],String,Query):Execute[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createQueryTask</span><span class="params">(<span name="task">task: <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">Task</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>, <span name="webserviceLocation">webserviceLocation: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="query">query: <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">Query</a></span>)</span><span class="result">: <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">Execute</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createQueryTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],webserviceLocation:String,query:org.talares.api.queries.Query):org.talares.api.actors.messages.ExecutorMessages.Execute[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <a href="messages/ExecutorMessages$.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages">org.talares.api.actors.messages.ExecutorMessages</a> with a complete URL in String form by using the
+createUrl() method to compose said URL from a webservice location and a query.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="messages/ExecutorMessages$.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages">org.talares.api.actors.messages.ExecutorMessages</a> with a complete URL in String form by using the
+createUrl() method to compose said URL from a webservice location and a query.
+</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>the active task</p></dd><dt class="param">webserviceLocation</dt><dd class="cmt"><p>the URL on which the webservice can be reached</p></dd><dt class="param">query</dt><dd class="cmt"><p>the query to have the webservice execute</p></dd><dt>returns</dt><dd class="cmt"><p>an <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a>
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createSearchQuery" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createSearchQuery(searchParams:Seq[Fetcher.this.SearchParam]):org.talares.api.queries.Query"></a>
+      <a id="createSearchQuery(Seq[SearchParam]):Query"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createSearchQuery</span><span class="params">(<span name="searchParams">searchParams: <span class="extype" name="scala.Seq">Seq</span>[<a href="#SearchParam=(String,Any)" class="extmbr" name="org.talares.api.actors.Fetcher.SearchParam">SearchParam</a>]</span>)</span><span class="result">: <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">Query</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createSearchQuery(searchParams:Seq[Fetcher.this.SearchParam]):org.talares.api.queries.Query" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a> consisting of the endpoint for type 'T' as well as a specific filter
+composed of the given search parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a> consisting of the endpoint for type 'T' as well as a specific filter
+composed of the given search parameters.
+</p></div><dl class="paramcmts block"><dt class="param">searchParams</dt><dd class="cmt"><p>a arbitrary number of key/value pairs to be 'and'ed into a filter</p></dd><dt>returns</dt><dd class="cmt"><p>an instance of <a href="../queries/package.html" class="extype" name="org.talares.api.queries">org.talares.api.queries.</a>
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createSearchTask" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createSearchTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],webserviceLocation:String,searchParams:Fetcher.this.SearchParam*):org.talares.api.actors.messages.ExecutorMessages.Execute[T]"></a>
+      <a id="createSearchTask(Task[T],String,SearchParam*):Execute[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createSearchTask</span><span class="params">(<span name="task">task: <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">Task</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>, <span name="webserviceLocation">webserviceLocation: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="searchParams">searchParams: <a href="#SearchParam=(String,Any)" class="extmbr" name="org.talares.api.actors.Fetcher.SearchParam">SearchParam</a>*</span>)</span><span class="result">: <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">Execute</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createSearchTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],webserviceLocation:String,searchParams:Fetcher.this.SearchParam*):org.talares.api.actors.messages.ExecutorMessages.Execute[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a> with a complete URL in String form by using
+the createUrl() method to compose said URL from a webservice location and Query consisting of a filter composed of
+the given search parameters.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a> with a complete URL in String form by using
+the createUrl() method to compose said URL from a webservice location and Query consisting of a filter composed of
+the given search parameters.
+</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>the active task</p></dd><dt class="param">webserviceLocation</dt><dd class="cmt"><p>the URL on which the webservice can be reached</p></dd><dt class="param">searchParams</dt><dd class="cmt"><p>the search parameters with which a filter should be constructed</p></dd><dt>returns</dt><dd class="cmt"><p>an <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a>
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createURLTask" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createURLTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],url:String):org.talares.api.actors.messages.ExecutorMessages.Execute[T]"></a>
+      <a id="createURLTask(Task[T],String):Execute[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createURLTask</span><span class="params">(<span name="task">task: <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">Task</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>, <span name="url">url: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result">: <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">Execute</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createURLTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T],url:String):org.talares.api.actors.messages.ExecutorMessages.Execute[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Creates a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a> with a complete URL in String form from the
+given completeURL.</p><div class="fullcomment"><div class="comment cmt"><p>Creates a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a> with a complete URL in String form from the
+given completeURL.
+</p></div><dl class="paramcmts block"><dt class="param">url</dt><dd class="cmt"><p>a complete URL</p></dd><dt>returns</dt><dd class="cmt"><p>an <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a>
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#createUrl" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="createUrl(webserviceLocation:String,query:org.talares.api.queries.Query):String"></a>
+      <a id="createUrl(String,Query):String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">createUrl</span><span class="params">(<span name="webserviceLocation">webserviceLocation: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="query">query: <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">Query</a></span>)</span><span class="result">: <span class="extype" name="scala.Predef.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@createUrl(webserviceLocation:String,query:org.talares.api.queries.Query):String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Composes a complete URL consisting of a webservice URL and a <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a>'s value.</p><div class="fullcomment"><div class="comment cmt"><p>Composes a complete URL consisting of a webservice URL and a <a href="../queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a>'s value.
+</p></div><dl class="paramcmts block"><dt class="param">webserviceLocation</dt><dd class="cmt"><p>the URL on which the webservice can be reached</p></dd><dt class="param">query</dt><dd class="cmt"><p>the query to have the webservice execute</p></dd><dt>returns</dt><dd class="cmt"><p>a complete URL in String form
+</p></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#endpoint" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="endpoint:String"></a>
+      <a id="endpoint:String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">endpoint</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@endpoint:String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Endpoint from which the Json representations of 'T' can be found within the webservice.</p><div class="fullcomment"><div class="comment cmt"><p>Endpoint from which the Json representations of 'T' can be found within the webservice.</p><p>The plural of the runtime class name of 'T' is used to find the endpoint. For instance a Fetcher[Page] will have
+endpoint Pages.
+</p></div></div>
+    </li><li name="scala.AnyRef#eq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="eq(x$1:AnyRef):Boolean"></a>
+      <a id="eq(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">eq</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@eq(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#equals" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="equals(x$1:Any):Boolean"></a>
+      <a id="equals(Any):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">equals</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@equals(x$1:Any):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.talares.api.actors.BaseActor#executionContext" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executionContext:scala.concurrent.ExecutionContextExecutor"></a>
+      <a id="executionContext:ExecutionContextExecutor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executionContext</span><span class="result">: <span class="extype" name="scala.concurrent.ExecutionContextExecutor">ExecutionContextExecutor</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@executionContext:scala.concurrent.ExecutionContextExecutor" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#executor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="executor:akka.actor.ActorRef"></a>
+      <a id="executor:ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">executor</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@executor:akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"><a href="Executor.html" class="extype" name="org.talares.api.actors.Executor">Executor</a> for use within this <a href="" class="extype" name="org.talares.api.actors.Fetcher">Fetcher</a>.</p><div class="fullcomment"><div class="comment cmt"><p><a href="Executor.html" class="extype" name="org.talares.api.actors.Executor">Executor</a> for use within this <a href="" class="extype" name="org.talares.api.actors.Fetcher">Fetcher</a>. *</p></div></div>
+    </li><li name="scala.AnyRef#finalize" visbl="prt" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="finalize():Unit"></a>
+      <a id="finalize():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">finalize</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@finalize():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Attributes</dt><dd>protected[<a href="../../../../java$lang.html" class="extype" name="java.lang">java.lang</a>] </dd><dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Throwable]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#getClass" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="getClass():Class[_]"></a>
+      <a id="getClass():Class[_]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">getClass</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.Class">Class</span>[_]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@getClass():Class[_]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#handleExecutorResult" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleExecutorResult(result:org.talares.api.actors.messages.ExecutorMessages.Result[T]):Unit"></a>
+      <a id="handleExecutorResult(Result[T]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleExecutorResult</span><span class="params">(<span name="result">result: <a href="messages/ExecutorMessages$$Result.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Result">Result</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@handleExecutorResult(result:org.talares.api.actors.messages.ExecutorMessages.Result[T]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Handles messages of the type <a href="messages/ExecutorMessages$$Result.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Result">org.talares.api.actors.messages.ExecutorMessages.Result</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Handles messages of the type <a href="messages/ExecutorMessages$$Result.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Result">org.talares.api.actors.messages.ExecutorMessages.Result</a>.</p><p>This function handles four different situations, all of which result in a
+<a href="messages/FetcherMessages$$Result.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Result">org.talares.api.actors.messages.FetcherMessages.Result</a> sent to the parent.</p><p>1. The result contains a JsArray; it is parsed as a Seq of 'T'
+2. The result contains a JsObject; it is parsed as a 'T'
+3. The result contains an unknown element; a UnexpectedResultException is propagated
+4. The result contains an Throwable; the Throwable is propagated
+</p></div><dl class="paramcmts block"><dt class="param">result</dt><dd class="cmt"><p>the <a href="messages/ExecutorMessages$$Result.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Result">org.talares.api.actors.messages.ExecutorMessages.Result</a> to handle</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>play.api.libs.json.JsObject
+</p></span><span class="cmt"><p>play.api.libs.json.JsArray</p></span><span class="cmt"><p>play.api.libs.json.JsValue</p></span><span class="cmt"><p><a href="Executor.html" class="extype" name="org.talares.api.actors.Executor">Executor</a></p></span></dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#handleTask" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="handleTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T]):Unit"></a>
+      <a id="handleTask(Task[T]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">handleTask</span><span class="params">(<span name="task">task: <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">Task</a>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@handleTask(task:org.talares.api.actors.messages.FetcherMessages.Task[T]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Handles messages of the type <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">org.talares.api.actors.messages.FetcherMessages.Task</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Handles messages of the type <a href="messages/FetcherMessages$$Task.html" class="extype" name="org.talares.api.actors.messages.FetcherMessages.Task">org.talares.api.actors.messages.FetcherMessages.Task</a>.</p><p>Depending on the type of task a function is used to turn this task into a complete URL where Json representations
+of 'T' might be found. This URL is then wrapped in a <a href="messages/ExecutorMessages$$Execute.html" class="extype" name="org.talares.api.actors.messages.ExecutorMessages.Execute">org.talares.api.actors.messages.ExecutorMessages.Execute</a>
+message and passed to an <a href="Executor.html" class="extype" name="org.talares.api.actors.Executor">Executor</a> for execution.
+</p></div><dl class="paramcmts block"><dt class="param">task</dt><dd class="cmt"><p>the task to handle</p></dd></dl><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p><a href="Executor.html" class="extype" name="org.talares.api.actors.Executor">Executor</a>
+</p></span></dd></dl></div>
+    </li><li name="scala.AnyRef#hashCode" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="hashCode():Int"></a>
+      <a id="hashCode():Int"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">hashCode</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Int">Int</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@hashCode():Int" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="scala.Any#isInstanceOf" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <a id="isInstanceOf[T0]:Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">isInstanceOf</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@isInstanceOf[T0]:Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Any</dd></dl></div>
+    </li><li name="akka.actor.ActorLogging#log" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="log:akka.event.LoggingAdapter"></a>
+      <a id="log:LoggingAdapter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">log</span><span class="result">: <span class="extype" name="akka.event.LoggingAdapter">LoggingAdapter</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@log:akka.event.LoggingAdapter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>ActorLogging</dd></dl></div>
+    </li><li name="scala.AnyRef#ne" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="ne(x$1:AnyRef):Boolean"></a>
+      <a id="ne(AnyRef):Boolean"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">ne</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.AnyRef">AnyRef</span></span>)</span><span class="result">: <span class="extype" name="scala.Boolean">Boolean</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@ne(x$1:AnyRef):Boolean" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notify" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notify():Unit"></a>
+      <a id="notify():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notify</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@notify():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="scala.AnyRef#notifyAll" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="notifyAll():Unit"></a>
+      <a id="notifyAll():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">notifyAll</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@notifyAll():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="akka.actor.Actor#postRestart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postRestart(reason:Throwable):Unit"></a>
+      <a id="postRestart(Throwable):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@postRestart(reason:Throwable):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#postStop" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="postStop():Unit"></a>
+      <a id="postStop():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">postStop</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@postStop():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#preRestart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preRestart(reason:Throwable,message:Option[Any]):Unit"></a>
+      <a id="preRestart(Throwable,Option[Any]):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preRestart</span><span class="params">(<span name="reason">reason: <span class="extype" name="scala.Throwable">Throwable</span></span>, <span name="message">message: <span class="extype" name="scala.Option">Option</span>[<span class="extype" name="scala.Any">Any</span>]</span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@preRestart(reason:Throwable,message:Option[Any]):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="akka.actor.Actor#preStart" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="preStart():Unit"></a>
+      <a id="preStart():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">preStart</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@preStart():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="symbol">classOf[java.lang.Exception]</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="org.talares.api.actors.Fetcher#reads" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="reads:play.api.libs.json.Reads[T]"></a>
+      <a id="reads:Reads[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">reads</span><span class="result">: <span class="extype" name="play.api.libs.json.Reads">Reads</span>[<span class="extype" name="org.talares.api.actors.Fetcher.T">T</span>]</span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@reads:play.api.libs.json.Reads[T]" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.actors.Fetcher#receive" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="receive:Fetcher.this.Receive"></a>
+      <a id="receive:Receive"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">receive</span><span class="result">: <a href="#Receive=akka.actor.Actor.Receive" class="extmbr" name="org.talares.api.actors.Fetcher.Receive">Receive</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@receive:Fetcher.this.Receive" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="" class="extype" name="org.talares.api.actors.Fetcher">Fetcher</a> → Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#self" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="self:akka.actor.ActorRef"></a>
+      <a id="self:ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit final </span>
+        <span class="kind">val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">self</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@self:akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#sender" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="sender():akka.actor.ActorRef"></a>
+      <a id="sender():ActorRef"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">sender</span><span class="params">()</span><span class="result">: <span class="extype" name="akka.actor.ActorRef">ActorRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@sender():akka.actor.ActorRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="akka.actor.Actor#supervisorStrategy" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="supervisorStrategy:akka.actor.SupervisorStrategy"></a>
+      <a id="supervisorStrategy:SupervisorStrategy"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">supervisorStrategy</span><span class="result">: <span class="extype" name="akka.actor.SupervisorStrategy">SupervisorStrategy</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@supervisorStrategy:akka.actor.SupervisorStrategy" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="scala.AnyRef#synchronized" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="synchronized[T0](x$1:=&gt;T0):T0"></a>
+      <a id="synchronized[T0](⇒T0):T0"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">synchronized</span><span class="tparams">[<span name="T0">T0</span>]</span><span class="params">(<span name="arg0">arg0: ⇒ <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>)</span><span class="result">: <span class="extype" name="java.lang.AnyRef.synchronized.T0">T0</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@synchronized[T0](x$1:=&gt;T0):T0" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd></dl></div>
+    </li><li name="org.talares.api.actors.BaseActor#system" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="system:akka.actor.ActorSystem"></a>
+      <a id="system:ActorSystem"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">system</span><span class="result">: <span class="extype" name="akka.actor.ActorSystem">ActorSystem</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@system:akka.actor.ActorSystem" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></dd></dl></div>
+    </li><li name="org.talares.api.actors.BaseActor#timeout" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="timeout:akka.util.Timeout"></a>
+      <a id="timeout:Timeout"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">lazy val</span>
+      </span>
+      <span class="symbol">
+        <span class="name">timeout</span><span class="result">: <span class="extype" name="akka.util.Timeout">Timeout</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@timeout:akka.util.Timeout" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd><a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></dd></dl></div>
+    </li><li name="scala.AnyRef#toString" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="toString():String"></a>
+      <a id="toString():String"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">toString</span><span class="params">()</span><span class="result">: <span class="extype" name="java.lang.String">String</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@toString():String" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef → Any</dd></dl></div>
+    </li><li name="akka.actor.Actor#unhandled" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="unhandled(message:Any):Unit"></a>
+      <a id="unhandled(Any):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">unhandled</span><span class="params">(<span name="message">message: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@unhandled(message:Any):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>Actor</dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait():Unit"></a>
+      <a id="wait():Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">()</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@wait():Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long,x$2:Int):Unit"></a>
+      <a id="wait(Long,Int):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>, <span name="arg1">arg1: <span class="extype" name="scala.Int">Int</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@wait(x$1:Long,x$2:Int):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li><li name="scala.AnyRef#wait" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="wait(x$1:Long):Unit"></a>
+      <a id="wait(Long):Unit"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">final </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">wait</span><span class="params">(<span name="arg0">arg0: <span class="extype" name="scala.Long">Long</span></span>)</span><span class="result">: <span class="extype" name="scala.Unit">Unit</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.actors.Fetcher@wait(x$1:Long):Unit" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <div class="fullcomment"><dl class="attributes block"> <dt>Definition Classes</dt><dd>AnyRef</dd><dt>Annotations</dt><dd>
+                <span class="name">@throws</span><span class="args">(<span>
+      
+      <span class="defval" name="classOf[java.lang.InterruptedException]">...</span>
+    </span>)</span>
+              
+        </dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="org.talares.api.actors.BaseActor">
+              <h3>Inherited from <a href="BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a></h3>
+            </div><div class="parent" name="akka.actor.ActorLogging">
+              <h3>Inherited from <span class="extype" name="akka.actor.ActorLogging">ActorLogging</span></h3>
+            </div><div class="parent" name="akka.actor.Actor">
+              <h3>Inherited from <span class="extype" name="akka.actor.Actor">Actor</span></h3>
+            </div><div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

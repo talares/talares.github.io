@@ -1,0 +1,256 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>datatypes - org.talares.api.datatypes</title>
+          <meta name="description" content="datatypes - org.talares.api.datatypes" />
+          <meta name="keywords" content="datatypes org.talares.api.datatypes" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'org.talares.api.datatypes.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.talares">talares</a>.<a href="../package.html" class="extype" name="org.talares.api">api</a></p>
+        <h1>datatypes</h1> <span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">datatypes</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.talares.api.datatypes.Deferred" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="Deferred[T&lt;:org.talares.api.datatypes.items.Item]extendsProductwithSerializable"></a>
+      <a id="Deferred[T&lt;:Item]:Deferred[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Deferred.html"><span class="name">Deferred</span></a><span class="tparams">[<span name="T">T &lt;: <a href="items/Item.html" class="extype" name="org.talares.api.datatypes.items.Item">Item</a></span>]</span><span class="params">(<span name="uri">uri: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="jsonReadable">jsonReadable: <a href="JsonReadable.html" class="extype" name="org.talares.api.datatypes.JsonReadable">JsonReadable</a>[<span class="extype" name="org.talares.api.datatypes.Deferred.T">T</span>]</span>, <span name="classTag">classTag: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="org.talares.api.datatypes.Deferred.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@Deferred[T&lt;:org.talares.api.datatypes.items.Item]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A deferred instance holds a Future of type 'T' to be resolved by an additional call to the webservice.</p><div class="fullcomment"><div class="comment cmt"><p>A deferred instance holds a Future of type 'T' to be resolved by an additional call to the webservice.</p><p>The call to said webservice will only be triggered when the value field is accessed.
+</p></div><dl class="paramcmts block"><dt class="param">uri</dt><dd class="cmt"><p>the URI supplied by the webservice which holds the complete path where the data for 'T' resides
+</p></dd></dl><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.datatypes.DeferredSeq" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="DeferredSeq[T&lt;:org.talares.api.datatypes.items.Item]extendsProductwithSerializable"></a>
+      <a id="DeferredSeq[T&lt;:Item]:DeferredSeq[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="DeferredSeq.html"><span class="name">DeferredSeq</span></a><span class="tparams">[<span name="T">T &lt;: <a href="items/Item.html" class="extype" name="org.talares.api.datatypes.items.Item">Item</a></span>]</span><span class="params">(<span name="uri">uri: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="jsonReadable">jsonReadable: <a href="JsonReadable.html" class="extype" name="org.talares.api.datatypes.JsonReadable">JsonReadable</a>[<span class="extype" name="org.talares.api.datatypes.DeferredSeq.T">T</span>]</span>, <span name="classTag">classTag: <span class="extype" name="scala.reflect.ClassTag">ClassTag</span>[<span class="extype" name="org.talares.api.datatypes.DeferredSeq.T">T</span>]</span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@DeferredSeq[T&lt;:org.talares.api.datatypes.items.Item]extendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A deferred instance holds a Future of a Seq of type 'T' to be resolved by an additional call to the webservice.</p><div class="fullcomment"><div class="comment cmt"><p>A deferred instance holds a Future of a Seq of type 'T' to be resolved by an additional call to the webservice.</p><p>The call to said webservice will only be triggered when the value field is accessed.
+</p></div><dl class="paramcmts block"><dt class="param">uri</dt><dd class="cmt"><p>the URI supplied by the webservice which holds the complete path where the data for a Seq of type 'T'
+           resides
+</p></dd></dl><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.datatypes.JsonReadable" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="JsonReadable[T]extendsAnyRef"></a>
+      <a id="JsonReadable[T]:JsonReadable[T]"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="JsonReadable.html"><span class="name">JsonReadable</span></a><span class="tparams">[<span name="T">T</span>]</span><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@JsonReadable[T]extendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Object which allows for type checking on the presence of a Reads for type 'T'.</p><div class="fullcomment"><div class="comment cmt"><p>Object which allows for type checking on the presence of a Reads for type 'T'.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.datatypes.Metadata" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="MetadataextendsProductwithSerializable"></a>
+      <a id="Metadata:Metadata"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Metadata.html"><span class="name">Metadata</span></a><span class="params">(<span name="uri">uri: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="type">type: <span class="extype" name="scala.Predef.String">String</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@MetadataextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Scala representation of a &#95;&#95;metadata field present in all Json representations of specific
+<a href="items/Item.html" class="extype" name="org.talares.api.datatypes.items.Item">org.talares.api.datatypes.items.Item</a>'s.</p><div class="fullcomment"><div class="comment cmt"><p>A Scala representation of a &#95;&#95;metadata field present in all Json representations of specific
+<a href="items/Item.html" class="extype" name="org.talares.api.datatypes.items.Item">org.talares.api.datatypes.items.Item</a>'s.</p><p>Example Json:</p><pre>__metadata<span class="lit">": {
+  "</span>uri<span class="lit">": "</span>http:<span class="cmt">//127.0.0.1:8080/cd_webservice/odata.svc",</span>
+  <span class="lit">"type"</span>: <span class="lit">"Tridion.ContentDelivery.Item"</span>
+}</pre></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.talares.api.datatypes.Deferred" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Deferred"></a>
+      <a id="Deferred:Deferred"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Deferred$.html"><span class="name">Deferred</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@Deferred" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.datatypes.DeferredSeq" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="DeferredSeq"></a>
+      <a id="DeferredSeq:DeferredSeq"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="DeferredSeq$.html"><span class="name">DeferredSeq</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@DeferredSeq" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.datatypes.Metadata" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Metadata"></a>
+      <a id="Metadata:Metadata"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Metadata$.html"><span class="name">Metadata</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@Metadata" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.datatypes.items" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="items"></a>
+      <a id="items:items"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="items/package.html"><span class="name">items</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.datatypes.package@items" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt"></p><div class="fullcomment"><div class="comment cmt"></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
