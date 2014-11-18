@@ -1,0 +1,270 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>api - org.talares.api</title>
+          <meta name="description" content="api - org.talares.api" />
+          <meta name="keywords" content="api org.talares.api" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../index.html';
+            var hash = 'org.talares.api.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../lib/package_big.png" />
+        <p id="owner"><a href="../../package.html" class="extype" name="org">org</a>.<a href="../package.html" class="extype" name="org.talares">talares</a></p>
+        <h1>api</h1> <span class="permalink">
+      <a href="../../../index.html#org.talares.api.package" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">api</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.talares.api.Settings" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SettingsextendsProductwithSerializable"></a>
+      <a id="Settings:Settings"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">sealed </span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Settings.html"><span class="name">Settings</span></a><span class="params">()</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@SettingsextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Convenience class holding all configuration values the library could need.</p><div class="fullcomment"><div class="comment cmt"><p>Convenience class holding all configuration values the library could need.</p><p>The settings are parsed from an .conf file present in the class path. Essential settings are checked for their
+presence and an IllegalArgumentException will be thrown if they are not.
+</p></div><dl class="attributes block"> <dt>See also</dt><dd><span class="cmt"><p>com.typesafe.config.ConfigFactory
+</p></span></dd></dl></div>
+    </li><li name="org.talares.api.Talares" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="TalaresextendsAnyRef"></a>
+      <a id="Talares:Talares"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="Talares.html"><span class="name">Talares</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@TalaresextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Class holding the main client facing API.</p><div class="fullcomment"><div class="comment cmt"><p>Class holding the main client facing API.</p><p>An instance of this class should be created to gain access to the API.
+A cache strategy should be decided upon and a corresponding instance of a subclass of
+<a href="cache/Cache.html" class="extype" name="org.talares.api.cache.Cache">org.talares.api.cache.Cache</a> should be provided to the constructor of this class.</p><p>Example:</p><pre><span class="kw">import</span> org.talares.api.Talares
+<span class="kw">import</span> org.talares.api.datatypes.items.Page
+<span class="kw">import</span> scala.concurrent.Future
+
+<span class="kw">val</span> talares = Talares(cache)
+Future[Page] pageFuture = talares.getPage(<span class="num">1</span>, <span class="num">2</span>)</pre></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0</p></dd><dt>See also</dt><dd><span class="cmt"><p>org.talares.api.cache.Cache
+</p></span></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.talares.api.Talares" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Talares"></a>
+      <a id="Talares:Talares"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Talares$.html"><span class="name">Talares</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@Talares" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.actors" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="actors"></a>
+      <a id="actors:actors"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="actors/package.html"><span class="name">actors</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@actors" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.as" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="as"></a>
+      <a id="as:as"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="as/package.html"><span class="name">as</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@as" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.cache" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="cache"></a>
+      <a id="cache:cache"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="cache/package.html"><span class="name">cache</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@cache" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.datatypes" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="datatypes"></a>
+      <a id="datatypes:datatypes"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="datatypes/package.html"><span class="name">datatypes</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@datatypes" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.exceptions" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="exceptions"></a>
+      <a id="exceptions:exceptions"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="exceptions/package.html"><span class="name">exceptions</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@exceptions" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.queries" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="queries"></a>
+      <a id="queries:queries"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="queries/package.html"><span class="name">queries</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../index.html#org.talares.api.package@queries" title="Permalink" target="_top">
+        <img src="../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Holds implicit conversion classes and functions for working with <a href="queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a>'s.</p><div class="fullcomment"><div class="comment cmt"><p>Holds implicit conversion classes and functions for working with <a href="queries/Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a>'s.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

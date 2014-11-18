@@ -1,0 +1,202 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>actors - org.talares.api.cache.actors</title>
+          <meta name="description" content="actors - org.talares.api.cache.actors" />
+          <meta name="keywords" content="actors org.talares.api.cache.actors" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../../index.html';
+            var hash = 'org.talares.api.cache.actors.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../../package.html" class="extype" name="org">org</a>.<a href="../../../package.html" class="extype" name="org.talares">talares</a>.<a href="../../package.html" class="extype" name="org.talares.api">api</a>.<a href="../package.html" class="extype" name="org.talares.api.cache">cache</a></p>
+        <h1>actors</h1> <span class="permalink">
+      <a href="../../../../../index.html#org.talares.api.cache.actors.package" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">actors</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        
+        
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.talares.api.cache.actors.AutoUpdateCachingActor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="AutoUpdateCachingActorextendsCachingActor"></a>
+      <a id="AutoUpdateCachingActor:AutoUpdateCachingActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="AutoUpdateCachingActor.html"><span class="name">AutoUpdateCachingActor</span></a><span class="result"> extends <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.talares.api.cache.actors.package@AutoUpdateCachingActorextendsCachingActor" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> which, after caching an item once, will always return a cached instance of this item.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> which, after caching an item once, will always return a cached instance of this item.</p><p>To do this it keeps the item updated asynchronously by sending a
+<a href="messages/CachingActorMessages$$NotFound.html" class="extype" name="org.talares.api.cache.actors.messages.CachingActorMessages.NotFound">org.talares.api.cache.actors.messages.CachingActorMessages.NotFound</a> message to it's parent after a specified
+amount of accesses to the cached item.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.cache.actors.CachingActor" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="CachingActorextendsBaseActorwithActorLogging"></a>
+      <a id="CachingActor:CachingActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="CachingActor.html"><span class="name">CachingActor</span></a><span class="result"> extends <a href="../../actors/BaseActor.html" class="extype" name="org.talares.api.actors.BaseActor">BaseActor</a> with <span class="extype" name="akka.actor.ActorLogging">ActorLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.talares.api.cache.actors.package@CachingActorextendsBaseActorwithActorLogging" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Blueprint for caching actors.</p><div class="fullcomment"><div class="comment cmt"><p>Blueprint for caching actors.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.cache.actors.NoCachingActor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="NoCachingActorextendsCachingActor"></a>
+      <a id="NoCachingActor:NoCachingActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="NoCachingActor.html"><span class="name">NoCachingActor</span></a><span class="result"> extends <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.talares.api.cache.actors.package@NoCachingActorextendsCachingActor" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> which does not apply any caching.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> which does not apply any caching. It simply returns a
+<a href="messages/CachingActorMessages$$NotFound.html" class="extype" name="org.talares.api.cache.actors.messages.CachingActorMessages.NotFound">org.talares.api.cache.actors.messages.CachingActorMessages.NotFound</a> on all
+<a href="messages/CachingActorMessages$$RetrieveFromCache.html" class="extype" name="org.talares.api.cache.actors.messages.CachingActorMessages.RetrieveFromCache">org.talares.api.cache.actors.messages.CachingActorMessages.RetrieveFromCache</a> messages.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.cache.actors.SimpleCachingActor" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="SimpleCachingActorextendsCachingActorwithActorLogging"></a>
+      <a id="SimpleCachingActor:SimpleCachingActor"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="SimpleCachingActor.html"><span class="name">SimpleCachingActor</span></a><span class="result"> extends <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> with <span class="extype" name="akka.actor.ActorLogging">ActorLogging</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.talares.api.cache.actors.package@SimpleCachingActorextendsCachingActorwithActorLogging" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> which uses the supplied cache implementation.</p><div class="fullcomment"><div class="comment cmt"><p>A <a href="CachingActor.html" class="extype" name="org.talares.api.cache.actors.CachingActor">CachingActor</a> which uses the supplied cache implementation.
+It will honor the configuration of the cache implementation as it will not add any cache strategy of it's own.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.talares.api.cache.actors.messages" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="messages"></a>
+      <a id="messages:messages"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <a href="messages/package.html"><span class="name">messages</span></a>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../../index.html#org.talares.api.cache.actors.package@messages" title="Permalink" target="_top">
+        <img src="../../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>

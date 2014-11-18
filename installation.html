@@ -11,8 +11,6 @@ title: Talares | Installation
 
   <p>SBT</p>
 {% highlight scala %}
-resolvers += Seq("Sonatype OSS Releases" at "https://oss.sonatype.org/content/repositories/releases")
-
 libraryDependencies += "org.talares" %% "talares" % "0.1.0"
 libraryDependencies += "org.talares" %% "talares-java" % "0.1.0" // Only needed to make the Java API available
 {% endhighlight %}
@@ -30,14 +28,34 @@ libraryDependencies += "org.talares" %% "talares-java" % "0.1.0" // Only needed 
   <artifactId>talares-java_2.10</artifactId>
   <version>0.1.0</version>
 </dependency>
+{% endhighlight %}
 
-<repositories>
-  <repository>
-    <id>sonatype-nexus-releases</id>
-    <name>Sonatype OSS Releases</name>
-    <url>https://oss.sonatype.org/content/repositories/releases</url>
-  </repository>
-</repositories>
+	<p>
+		To make use of the latest development, snapshot releases are available (note that these releases should not 
+		be considered stable and should therefore mostly serve testing purposes):
+	</p>
+	
+	  <p>SBT</p>
+{% highlight scala %}
+resolvers +=  "Sonatype snapshots" at "https://oss.sonatype.org/content/repositories/snapshots/"
+
+libraryDependencies += "org.talares" %% "talares" % "0.1.1-SNAPSHOT"
+libraryDependencies += "org.talares" %% "talares-java" % "0.1.1-SNAPSHOT" // Only needed to make the Java API available
+{% endhighlight %}
+
+  <p>Maven</p>
+{% highlight xml %}
+<dependency>
+  <groupId>org.talares</groupId>
+  <artifactId>talares_2.10</artifactId>
+  <version>0.1.1-SNAPSHOT</version>
+</dependency>
+<!-- Only needed to make the Java API available -->
+<dependency>
+  <groupId>org.talares</groupId>
+  <artifactId>talares-java_2.10</artifactId>
+  <version>0.1.1-SNAPSHOT</version>
+</dependency>
 {% endhighlight %}
 
   <p>
@@ -50,4 +68,5 @@ libraryDependencies += "org.talares" %% "talares-java" % "0.1.0" // Only needed 
   {% highlight haml %}
   talares.webservicelocation="http://www.example.com/cd_webservice/odata.svc"
   {% endhighlight %}
+  
 </article>

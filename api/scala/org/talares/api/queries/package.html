@@ -1,0 +1,313 @@
+<!DOCTYPE html >
+<html>
+        <head>
+          <title>queries - org.talares.api.queries</title>
+          <meta name="description" content="queries - org.talares.api.queries" />
+          <meta name="keywords" content="queries org.talares.api.queries" />
+          <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+          
+      <link href="../../../../lib/template.css" media="screen" type="text/css" rel="stylesheet" />
+      <link href="../../../../lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css" />
+      <script type="text/javascript" src="../../../../lib/jquery.js" id="jquery-js"></script>
+      <script type="text/javascript" src="../../../../lib/jquery-ui.js"></script>
+      <script type="text/javascript" src="../../../../lib/template.js"></script>
+      <script type="text/javascript" src="../../../../lib/tools.tooltip.js"></script>
+      
+      <script type="text/javascript">
+         if(top === self) {
+            var url = '../../../../index.html';
+            var hash = 'org.talares.api.queries.package';
+            var anchor = window.location.hash;
+            var anchor_opt = '';
+            if (anchor.length >= 1)
+              anchor_opt = '@' + anchor.substring(1);
+            window.location.href = url + '#' + hash + anchor_opt;
+         }
+   	  </script>
+    
+        </head>
+        <body class="value">
+      <div id="definition">
+        <img src="../../../../lib/package_big.png" />
+        <p id="owner"><a href="../../../package.html" class="extype" name="org">org</a>.<a href="../../package.html" class="extype" name="org.talares">talares</a>.<a href="../package.html" class="extype" name="org.talares.api">api</a></p>
+        <h1>queries</h1> <span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      </div>
+
+      <h4 id="signature" class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">package</span>
+      </span>
+      <span class="symbol">
+        <span class="name">queries</span>
+      </span>
+      </h4>
+      
+          <div id="comment" class="fullcommenttop"><div class="comment cmt"><p>Holds implicit conversion classes and functions for working with <a href="Query.html" class="extype" name="org.talares.api.queries.Query">org.talares.api.queries.Query</a>'s.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl><div class="toggleContainer block">
+          <span class="toggle">Linear Supertypes</span>
+          <div class="superTypes hiddenContent"><span class="extype" name="scala.AnyRef">AnyRef</span>, <span class="extype" name="scala.Any">Any</span></div>
+        </div></div>
+        
+
+      <div id="mbrsel">
+        <div id="textfilter"><span class="pre"></span><span class="input"><input id="mbrsel-input" type="text" accesskey="/" /></span><span class="post"></span></div>
+        <div id="order">
+              <span class="filtertype">Ordering</span>
+              <ol>
+                
+                <li class="alpha in"><span>Alphabetic</span></li>
+                <li class="inherit out"><span>By inheritance</span></li>
+              </ol>
+            </div>
+        <div id="ancestors">
+                <span class="filtertype">Inherited<br />
+                </span>
+                <ol id="linearization">
+                  <li class="in" name="org.talares.api.queries"><span>queries</span></li><li class="in" name="scala.AnyRef"><span>AnyRef</span></li><li class="in" name="scala.Any"><span>Any</span></li>
+                </ol>
+              </div><div id="ancestors">
+            <span class="filtertype"></span>
+            <ol>
+              <li class="hideall out"><span>Hide All</span></li>
+              <li class="showall in"><span>Show all</span></li>
+            </ol>
+            <a href="http://docs.scala-lang.org/overviews/scaladoc/usage.html#members" target="_blank">Learn more about member selection</a>
+          </div>
+        <div id="visbl">
+            <span class="filtertype">Visibility</span>
+            <ol><li class="public in"><span>Public</span></li><li class="all out"><span>All</span></li></ol>
+          </div>
+      </div>
+
+      <div id="template">
+        <div id="allMembers">
+        
+
+        <div id="types" class="types members">
+              <h3>Type Members</h3>
+              <ol><li name="org.talares.api.queries.Filter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="FilterextendsQueryOptionwithProductwithSerializable"></a>
+      <a id="Filter:Filter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Filter.html"><span class="name">Filter</span></a><span class="params">(<span name="andOr">andOr: <a href="Filter$.html#AndOr=org.talares.api.queries.Filter.Value" class="extmbr" name="org.talares.api.queries.Filter.AndOr">AndOr</a></span>, <span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[<a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a>]</span>)</span><span class="result"> extends <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a> with <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@FilterextendsQueryOptionwithProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a> that filters a result according to a given set of arguments.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a> that filters a result according to a given set of arguments.
+</p></div><dl class="paramcmts block"><dt class="param">andOr</dt><dd class="cmt"><p>whether to AND or OR the filter arguments</p></dd><dt class="param">args</dt><dd class="cmt"><p>the <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a>'s that make up the args
+</p></dd></dl></div>
+    </li><li name="org.talares.api.queries.FilterOps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="FilterOpsextendsAnyRef"></a>
+      <a id="FilterOps:FilterOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$FilterOps.html"><span class="name">FilterOps</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@FilterOpsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Turns two <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a>'s into a <a href="Filter.html" class="extype" name="org.talares.api.queries.Filter">Filter</a> by either AND'ing or OR'ing them together.</p>
+    </li><li name="org.talares.api.queries.Operation" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="OperationextendsProductwithSerializable"></a>
+      <a id="Operation:Operation"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Operation.html"><span class="name">Operation</span></a><span class="params">(<span name="key">key: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="operator">operator: <a href="Operator$.html#Operator=org.talares.api.queries.Operator.Value" class="extmbr" name="org.talares.api.queries.Operator.Operator">Operator</a></span>, <span name="value">value: <span class="extype" name="scala.Any">Any</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@OperationextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents a specific operation to be included in a <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Represents a specific operation to be included in a <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a>.
+</p></div><dl class="paramcmts block"><dt class="param">key</dt><dd class="cmt"><p>the key of the operation</p></dd><dt class="param">operator</dt><dd class="cmt"><p>the operator of the operation</p></dd><dt class="param">value</dt><dd class="cmt"><p>the value of the operation
+</p></dd></dl></div>
+    </li><li name="org.talares.api.queries.Query" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="QueryextendsProductwithSerializable"></a>
+      <a id="Query:Query"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">case class</span>
+      </span>
+      <span class="symbol">
+        <a href="Query.html"><span class="name">Query</span></a><span class="params">(<span name="name">name: <span class="extype" name="scala.Predef.String">String</span></span>, <span name="args">args: <span class="extype" name="scala.Seq">Seq</span>[(<span class="extype" name="scala.Predef.String">String</span>, <span class="extype" name="scala.Predef.String">String</span>)] = <span class="symbol">Seq()</span></span>)</span><span class="params">(<span name="parent">parent: <span class="extype" name="scala.Option">Option</span>[<a href="Query.html" class="extype" name="org.talares.api.queries.Query">Query</a>] = <span class="symbol">None</span></span>)</span><span class="params">(<span name="options">options: <span class="extype" name="scala.Seq">Seq</span>[<a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a>] = <span class="symbol">Seq()</span></span>)</span><span class="result"> extends <span class="extype" name="scala.Product">Product</span> with <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@QueryextendsProductwithSerializable" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">A Scala representation of an OData query URL.</p><div class="fullcomment"><div class="comment cmt"><p>A Scala representation of an OData query URL.</p><p>Example:</p><pre><span class="kw">import</span> org.talares.api.queries._
+<span class="kw">val</span> q = Query / <span class="lit">"Pages"</span> % (<span class="lit">"ItemId"</span> -&gt; <span class="num">123</span>, <span class="lit">"PublicationId"</span> -&gt; <span class="num">1</span>) $ (<span class="lit">"Title"</span> ==| <span class="lit">"A title"</span>) &amp;&amp; (<span class="lit">"Url"</span> !=| <span class="lit">"/path"</span>)</pre></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li><li name="org.talares.api.queries.QueryOps" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="QueryOpsextendsAnyRef"></a>
+      <a id="QueryOps:QueryOps"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">class</span>
+      </span>
+      <span class="symbol">
+        <a href="package$$QueryOps.html"><span class="name">QueryOps</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@QueryOpsextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Holds functions for transforming key value pairs of String to Any into <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a>'s.</p>
+    </li><li name="org.talares.api.queries.QueryOption" visbl="pub" data-isabs="true" fullComment="yes" group="Ungrouped">
+      <a id="QueryOptionextendsAnyRef"></a>
+      <a id="QueryOption:QueryOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">trait</span>
+      </span>
+      <span class="symbol">
+        <a href="QueryOption.html"><span class="name">QueryOption</span></a><span class="result"> extends <span class="extype" name="scala.AnyRef">AnyRef</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@QueryOptionextendsAnyRef" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Represents part(s) of a OData query that are optional and mutate the result in a specific way.</p><div class="fullcomment"><div class="comment cmt"><p>Represents part(s) of a OData query that are optional and mutate the result in a specific way.
+</p></div><dl class="attributes block"> <dt>Since</dt><dd><p>0.1.0
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        <div id="values" class="values members">
+              <h3>Value Members</h3>
+              <ol><li name="org.talares.api.queries.Filter" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Filter"></a>
+      <a id="Filter:Filter"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Filter$.html"><span class="name">Filter</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@Filter" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.queries.Operator" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Operator"></a>
+      <a id="Operator:Operator"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Operator$.html"><span class="name">Operator</span></a><span class="result"> extends <span class="extype" name="scala.Enumeration">Enumeration</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@Operator" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Operators for specifying <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a>'s.</p>
+    </li><li name="org.talares.api.queries.Query" visbl="pub" data-isabs="false" fullComment="no" group="Ungrouped">
+      <a id="Query"></a>
+      <a id="Query:Query"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier"></span>
+        <span class="kind">object</span>
+      </span>
+      <span class="symbol">
+        <a href="Query$.html"><span class="name">Query</span></a><span class="result"> extends <span class="extype" name="scala.Serializable">Serializable</span></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@Query" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      
+    </li><li name="org.talares.api.queries#operatorToFilter" visbl="pub" data-isabs="false" fullComment="yes" group="Ungrouped">
+      <a id="operatorToFilter(operator:org.talares.api.queries.Operation)(implicitandOr:org.talares.api.queries.Filter.AndOr):org.talares.api.queries.QueryOption"></a>
+      <a id="operatorToFilter(Operation)(AndOr):QueryOption"></a>
+      <h4 class="signature">
+      <span class="modifier_kind">
+        <span class="modifier">implicit </span>
+        <span class="kind">def</span>
+      </span>
+      <span class="symbol">
+        <span class="name">operatorToFilter</span><span class="params">(<span name="operator">operator: <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a></span>)</span><span class="params">(<span class="implicit">implicit </span><span name="andOr">andOr: <a href="Filter$.html#AndOr=org.talares.api.queries.Filter.Value" class="extmbr" name="org.talares.api.queries.Filter.AndOr">AndOr</a> = <span class="symbol"><span class="name"><a href="../../../package.html">And</a></span></span></span>)</span><span class="result">: <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a></span>
+      </span>
+      </h4><span class="permalink">
+      <a href="../../../../index.html#org.talares.api.queries.package@operatorToFilter(operator:org.talares.api.queries.Operation)(implicitandOr:org.talares.api.queries.Filter.AndOr):org.talares.api.queries.QueryOption" title="Permalink" target="_top">
+        <img src="../../../../lib/permalink.png" />
+      </a>
+    </span>
+      <p class="shortcomment cmt">Takes an <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a> and a implicit AndOr and turns it into a <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a>.</p><div class="fullcomment"><div class="comment cmt"><p>Takes an <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a> and a implicit AndOr and turns it into a <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a>.
+</p></div><dl class="paramcmts block"><dt class="param">operator</dt><dd class="cmt"><p>the <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a> to be transformed</p></dd><dt class="param">andOr</dt><dd class="cmt"><p>whether to AND or OR the given <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a></p></dd><dt>returns</dt><dd class="cmt"><p>an instance of <a href="QueryOption.html" class="extype" name="org.talares.api.queries.QueryOption">QueryOption</a> which represents the conditions expressed by the <a href="Operation.html" class="extype" name="org.talares.api.queries.Operation">Operation</a> and AndOr
+</p></dd></dl></div>
+    </li></ol>
+            </div>
+
+        
+
+        
+        </div>
+
+        <div id="inheritedMembers">
+        <div class="parent" name="scala.AnyRef">
+              <h3>Inherited from <span class="extype" name="scala.AnyRef">AnyRef</span></h3>
+            </div><div class="parent" name="scala.Any">
+              <h3>Inherited from <span class="extype" name="scala.Any">Any</span></h3>
+            </div>
+        
+        </div>
+
+        <div id="groupedMembers">
+        <div class="group" name="Ungrouped">
+              <h3>Ungrouped</h3>
+              
+            </div>
+        </div>
+
+      </div>
+
+      <div id="tooltip"></div>
+
+      <div id="footer">  </div>
+
+
+    </body>
+      </html>
